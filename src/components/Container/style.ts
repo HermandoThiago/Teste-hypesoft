@@ -8,23 +8,28 @@ interface IStyledContainer {
 
 export const StyledContainer = styled.div<IStyledContainer>`
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     margin: 0 auto;
 
     ${(props) => {
         if(props.size === 'medium'){
             return css`
-                width: 1280px;
+                max-width: 1280px;
             `
         }
 
         if(props.size === 'large'){
             return css`
-                width: 1920px;
+                max-width: 1920px;
+                background: linear-gradient(
+                    to right,
+                    #242424 0%,
+                    #242424 62%,
+                    #7D00FF 38%,
+                    #7D00FF 100%
+                );
             `
         }
     }}
