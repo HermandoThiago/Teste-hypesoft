@@ -28,7 +28,7 @@ export const StyledTypography = styled.p<IStyledTypography>`
 
         if(props.size === 'medium'){
             return css`
-                font-size: 48px;
+                font-size: 42px;
             `
         }
 

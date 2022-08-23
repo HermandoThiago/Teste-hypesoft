@@ -11,6 +11,8 @@ export interface IStyledBox {
     right?: number;
     content?: string;
     align?: string;
+    py?: number;
+    px?: number;
 }
 
 export const StyledBox = styled.div<IStyledBox>`
@@ -24,6 +26,10 @@ export const StyledBox = styled.div<IStyledBox>`
     margin-bottom: ${props => `${props.bottom}px`};
     margin-right: ${props => `${props.right}px`};
     margin-left: ${props => `${props.left}px`};
+    padding-top: ${props => `${props.py}px`};
+    padding-bottom: ${props => `${props.py}px`};
+    padding-right: ${props => `${props.px}px`}; 
+    padding-left: ${props => `${props.px}px`};
 
     img{
         max-width: 100%;

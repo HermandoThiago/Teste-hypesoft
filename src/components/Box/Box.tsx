@@ -13,7 +13,9 @@ export default function Box({
     right,
     left,
     content,
-    align
+    align,
+    py,
+    px
  }: IPropsBox){
     return(
         <StyledBox 
@@ -25,6 +27,8 @@ export default function Box({
             right={right}
             content={content}
             align={align}
+            py={py}
+            px={px}
         >
             {children}
         </StyledBox>

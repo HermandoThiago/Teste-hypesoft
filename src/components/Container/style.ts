@@ -6,7 +6,7 @@ interface IStyledContainer {
     size: sizeContainer;
 }
 
-export const StyledContainer = styled.div<IStyledContainer>`
+export const StyledContainer = styled.section<IStyledContainer>`
     width: 100%;
     height: 100%;
     display: flex;
