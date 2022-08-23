@@ -1,12 +1,7 @@
-import { StyledButton, colorButon } from "./style";
+import { StyledButton, IStyledButton } from "./style";
 
-interface IPropsButton {
-    color: colorButon;
+interface IPropsButton extends IStyledButton{
     children: string | React.ReactNode;
-    top?: number;
-    bottom?: number;
-    right?: number;
-    left?: number;
 }
 
 export default function Button({ 
@@ -15,7 +10,8 @@ export default function Button({
     top,
     bottom,
     right,
-    left 
+    left,
+    size
 }: IPropsButton){
     return(
         <StyledButton 
@@ -24,6 +20,7 @@ export default function Button({
             bottom={bottom}
             right={right}
             left={left}
+            size={size}
         >
             {children}
         </StyledButton>

@@ -2,12 +2,13 @@ import styled, { css } from 'styled-components';
 
 export type colorButon = 'primary' | 'secondary';
 
-interface IStyledButton {
+export interface IStyledButton {
     color: colorButon;
     top?: number;
     bottom?: number;
     right?: number;
     left?: number;
+    size?: string;
 }
 
 export const StyledButton = styled.button<IStyledButton>`
@@ -33,6 +34,17 @@ export const StyledButton = styled.button<IStyledButton>`
             return css`
                 background-color: #7D00FF;
                 color: #ffffff;
+            `
+        }
+
+    }}
+
+    ${(props) => {
+        if(props.size === 'icon'){
+            return css`
+                padding: 0px;
+                width: 52px;
+                height: 52px;
             `
         }
     }}
