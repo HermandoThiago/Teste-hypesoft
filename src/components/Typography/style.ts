@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export type sizeTypography = 'small' | 'medium' | 'large';
-export type colorTypography = 'primary' | 'secondary';
+export type colorTypography = 'primary' | 'secondary' | 'info';
 
 interface IStyledTypography {
     size: sizeTypography;
@@ -34,7 +34,7 @@ export const StyledTypography = styled.p<IStyledTypography>`
 
         if(props.size === 'large'){
             return css`
-                font-size: 80px;
+                font-size: 70px;
             `
         }
     }}
@@ -49,6 +49,12 @@ export const StyledTypography = styled.p<IStyledTypography>`
         if(props.color === 'secondary'){
             return css`
                 color: #ED1CA6;
+            `
+        }
+
+        if(props.color === 'info'){
+            return css`
+                color: #7D00FF;
             `
         }
     }}
