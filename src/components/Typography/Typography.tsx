@@ -1,13 +1,7 @@
-import { StyledTypography, colorTypography, sizeTypography } from "./style"
+import { StyledTypography, IStyledTypography } from "./style"
 
-interface IPropsTypography {
-    size: sizeTypography;
-    color: colorTypography;
+interface IPropsTypography extends IStyledTypography{
     children: string | React.ReactNode;
-    top?: number;
-    bottom?: number;
-    right?: number;
-    left?: number;
 }
 
 export default function Typography({ 
@@ -17,7 +11,8 @@ export default function Typography({
     top,
     bottom,
     right,
-    left
+    left,
+    align
  }: IPropsTypography){
     return(
         <StyledTypography
@@ -27,6 +22,7 @@ export default function Typography({
             bottom={bottom}
             right={right}
             left={left}
+            align={align}
         >
             {children}
         </StyledTypography>

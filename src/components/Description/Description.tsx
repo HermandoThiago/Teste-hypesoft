@@ -10,7 +10,7 @@ export default function Description(){
                     <Box width={40} py={40}>
                         <img src={require('../../assets/images/notebook.png')} alt='notebook' style={{ boxShadow: '20px 20px #fff', borderRadius: '10px' }}/>
                     </Box>
-                    <Box width={60} direction='column' py={40} px={80} align='center'>
+                    <Box width={60} direction='column' py={40} px={80} align='left'>
                         <Typography size='medium' color="primary">
                         Software Engineer and Infrastructure specialist based in Brazil.
                         </Typography>

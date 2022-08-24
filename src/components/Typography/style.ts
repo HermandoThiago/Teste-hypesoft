@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components';
 
 export type sizeTypography = 'small' | 'medium' | 'large';
-export type colorTypography = 'primary' | 'secondary' | 'info';
+export type colorTypography = 'primary' | 'secondary' | 'info' | 'black';
 
-interface IStyledTypography {
+export interface IStyledTypography {
     size: sizeTypography;
     color: colorTypography;
     top?: number;
     bottom?: number;
     right?: number;
     left?: number;
+    align?: string;
 }
 
 export const StyledTypography = styled.p<IStyledTypography>`
@@ -17,6 +18,7 @@ export const StyledTypography = styled.p<IStyledTypography>`
     margin-left: ${props => `${props.left}px`};
     margin-bottom: ${props => `${props.bottom}px`};
     margin-right: ${props => `${props.right}px`};
+    text-align: ${props => props.align};
 
     ${(props) => {
         if(props.size === 'small'){
@@ -55,6 +57,12 @@ export const StyledTypography = styled.p<IStyledTypography>`
         if(props.color === 'info'){
             return css`
                 color: #7D00FF;
+            `
+        }
+
+        if(props.color === 'black'){
+            return css`
+                color: black;
             `
         }
     }}
