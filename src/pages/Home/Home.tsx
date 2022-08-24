@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Typography from "../../components/Typography/Typography";
 import Box from "../../components/Box/Box";
 import Description from "../../components/Description/Description";
+import CardServices from "../../components/CardsServices/CardServices";
 
 export default function Home(){
     return(
@@ -26,10 +27,10 @@ export default function Home(){
                                     I’ve worked with big companies and up-and-coming startups.
                                 </Typography>
                             </div>
-                            <div>
+                            <Box width={100}>
                                 <Button color="secondary">HIRE ME</Button>
                                 <Button color="primary" left={15}>VIEW WORK</Button>
-                            </div>
+                            </Box>
                             <Box width={100} top={200} direction='column'>
                                 <Typography size="small" color="primary">Follow me on</Typography>
                                 <Box width={100} top={10}>
@@ -55,6 +56,7 @@ export default function Home(){
                 </Container>
             </Container>
             <Description />
+            <CardServices />
         </>
     )
 }
