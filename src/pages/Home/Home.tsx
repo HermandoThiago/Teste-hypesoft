@@ -5,6 +5,7 @@ import Typography from "../../components/Typography/Typography";
 import Box from "../../components/Box/Box";
 import Description from "../../components/Description/Description";
 import CardServices from "../../components/CardsServices/CardServices";
+import CardsWorks from '../../components/CardsWorks/CardsWorks';
 
 export default function Home(){
     return(
@@ -57,6 +58,7 @@ export default function Home(){
             </Container>
             <Description />
             <CardServices />
+            <CardsWorks />
         </>
     )
 }
