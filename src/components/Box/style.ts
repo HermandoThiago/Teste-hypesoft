@@ -18,6 +18,7 @@ export interface IStyledBox {
 export const StyledBox = styled.div<IStyledBox>`
     display: flex;
     max-width: 100%;
+    flex-wrap: wrap;
     width: ${props => `${props.width}%`};
     flex-direction: ${props => `${props.direction}`};
     justify-content: ${props => `${props.content}`};

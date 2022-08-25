@@ -19,9 +19,5 @@ export const StyledCard = styled.div`
     :hover{
         background-color: #fff;
         transition: .6s;
-
-        svg{
-            color: red;
-        }
     }
 `;
