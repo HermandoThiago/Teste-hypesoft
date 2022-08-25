@@ -6,6 +6,7 @@ import Box from "../../components/Box/Box";
 import Description from "../../components/Description/Description";
 import CardServices from "../../components/CardsServices/CardServices";
 import CardsWorks from '../../components/CardsWorks/CardsWorks';
+import Enterprise from "../../components/Enterprises/Enterprise";
 
 export default function Home(){
     return(
@@ -59,6 +60,7 @@ export default function Home(){
             <Description />
             <CardServices />
             <CardsWorks />
+            <Enterprise />
         </>
     )
 }
