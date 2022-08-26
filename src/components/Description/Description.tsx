@@ -6,7 +6,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 export default function Description(){
     return(
-        <Container size='medium'>
+        <Container size='medium' id='description'>
                 <Box width={100} py={50} content='center' align='center'>
                     <StyledContainerImage width={40} py={40}>
                         <img src={require('../../assets/images/notebook.png')} alt='notebook' style={{ boxShadow: '20px 20px #fff', borderRadius: '10px' }}/>

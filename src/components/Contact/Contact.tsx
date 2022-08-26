@@ -27,7 +27,7 @@ import { RiMapPin2Line } from 'react-icons/ri';
 
 export default function Contact(){
     return(
-        <Container size='medium'>
+        <Container size='medium' id='contact'>
             <StyledContact width={100} py={100} direction='row'>
                 <StyledContainerContact width={55} py={40} px={40} direction='column'>
                     <Typography size='medium' color='black' bottom={15}>Let me know here.</Typography>
