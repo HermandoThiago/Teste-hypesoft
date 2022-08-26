@@ -29,4 +29,26 @@ export const Legend = styled.span<LegendColor>`
 export const StyledComment = styled(StyledBox)`
     background: #FFFFFF;
     border-radius: 4px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        flex-direction: row;
+        margin-bottom: 10px !important;
+
+        div:nth-child(1){
+            width: 20%;
+            //background-color: blue;
+            div{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        div:nth-child(2){
+            width: 80%;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
 `;

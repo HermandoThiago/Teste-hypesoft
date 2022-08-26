@@ -14,6 +14,11 @@ export const StyledContainerMessage = styled(StyledBox)`
         margin-right: 10px;
         z-index: 2;
     }
+
+    @media screen and (max-width: 768px){
+        margin-top: 20px !important;
+    }
+
 `;
 
 export const QuotationLeft = styled.img`

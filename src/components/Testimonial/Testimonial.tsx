@@ -4,6 +4,7 @@ import Typography from "../Typography/Typography";
 import Separator from "../Separator/Separator";
 import Comment from "./Comment/Comment";
 import Message from "./Message/Message";
+import { StyledContainerTestimonial, StyledContainerComment } from './style';
 
 export default function Testimonial(){
     return(
@@ -12,17 +13,17 @@ export default function Testimonial(){
                 <Typography size='medium' color='primary' bottom={10}>Testimonial</Typography>
                 <Separator />
             </Box>
-            <Box width={100} direction='row'>
-                <Box width={20} direction='column' content='space-between'>
+            <StyledContainerTestimonial width={100} direction='row'>
+                <StyledContainerComment width={20} direction='column' content='space-between'>
                     <Comment />
                     <Comment />
                     <Comment />
                     <Comment />
-                </Box>
+                </StyledContainerComment>
                 <Box width={80}>
                     <Message />
                 </Box>
-            </Box>
+            </StyledContainerTestimonial>
         </Container>
     )
 }
