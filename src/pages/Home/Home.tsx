@@ -10,6 +10,7 @@ import Enterprise from "../../components/Enterprises/Enterprise";
 import Banner from "../../components/Banner/Banner";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home(){
     return(
@@ -67,6 +68,7 @@ export default function Home(){
             <Banner />
             <Testimonial />
             <Contact />
+            <Footer />
         </>
     )
 }
