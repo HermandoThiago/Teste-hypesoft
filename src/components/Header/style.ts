@@ -15,12 +15,11 @@ export const StyledHeader = styled.div`
     @media screen and (max-width: 768px){
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-
+        
         div{
             width: 100%;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
         }
 
         p{
