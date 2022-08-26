@@ -7,6 +7,7 @@ import Description from "../../components/Description/Description";
 import CardServices from "../../components/CardsServices/CardServices";
 import CardsWorks from '../../components/CardsWorks/CardsWorks';
 import Enterprise from "../../components/Enterprises/Enterprise";
+import Banner from "../../components/Banner/Banner";
 
 export default function Home(){
     return(
@@ -61,6 +62,7 @@ export default function Home(){
             <CardServices />
             <CardsWorks />
             <Enterprise />
+            <Banner />
         </>
     )
 }
