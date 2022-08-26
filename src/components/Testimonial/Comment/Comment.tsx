@@ -4,7 +4,7 @@ import { StyledComment, Circle, Legend } from './style';
 
 export default function Comment(){
     return(
-        <StyledComment width={100} direction='row' py={10} px={10} bottom={10}>
+        <StyledComment width={100} direction='row' py={10} px={10}>
             <Box width={20}>
                 <Circle />
             </Box>
