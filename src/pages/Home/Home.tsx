@@ -9,6 +9,7 @@ import CardsWorks from '../../components/CardsWorks/CardsWorks';
 import Enterprise from "../../components/Enterprises/Enterprise";
 import Banner from "../../components/Banner/Banner";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Contact from "../../components/Contact/Contact";
 
 export default function Home(){
     return(
@@ -65,6 +66,7 @@ export default function Home(){
             <Enterprise />
             <Banner />
             <Testimonial />
+            <Contact />
         </>
     )
 }
