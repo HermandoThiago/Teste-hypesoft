@@ -20,7 +20,7 @@ export default function Card({ icon, children }: IPropsCard){
             </Typography>
             <Separator />
             <Box width={100} top={20}>
-                <BsArrowRight size={30}  style={{fill: 'black'}}/>
+                <BsArrowRight size={30} />
             </Box>
         </StyledCard>
     )

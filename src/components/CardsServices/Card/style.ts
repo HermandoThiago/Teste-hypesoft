@@ -18,6 +18,10 @@ export const StyledCard = styled.div`
 
     :hover{
         background-color: #fff;
-        transition: .6s;
+        
+        svg{
+            fill: #ED1CA6;
+            transition: .3s;
+        }
     }
 `;
