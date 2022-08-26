@@ -33,4 +33,16 @@ export const StyledContainer = styled.section<IStyledContainer>`
             `
         }
     }}
+
+    @media screen and (max-width: 768px){
+        ${props => {
+            if(props.size === 'large'){
+                return css`
+                    background: #242424;
+                `
+            }
+        }}
+    }
+
+
 `;
