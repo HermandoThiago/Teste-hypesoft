@@ -10,7 +10,7 @@ import {
     StyledContainerInfo,
     StyledContact
 } from './style';
-import { FiSend, FiMapPin } from 'react-icons/fi';
+import { FiSend } from 'react-icons/fi';
 import { 
     AiOutlineMail,
     AiOutlineDribbble, 
@@ -23,6 +23,7 @@ import {
 import { BsTelephone } from 'react-icons/bs';
 import Info from "./Info/Info";
 import ButtonIcon from "./ButtonIcon/ButtonIcon";
+import { RiMapPin2Line } from 'react-icons/ri';
 
 export default function Contact(){
     return(
@@ -41,7 +42,7 @@ export default function Contact(){
                 <StyledContainerInfo width={43} py={40} px={40} direction='column'>
                     <Typography size='medium' color='black' bottom={15}>Get In Touch</Typography>
                     <Box width={100}>
-                        <Info icon={<FiMapPin size={25} />}>
+                        <Info icon={<RiMapPin2Line size={28} />}>
                             <span>House #5, Street Number #98,</span>
                             <span> brasilia-70000-000, Brazil.</span>
                         </Info>

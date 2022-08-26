@@ -3,7 +3,7 @@ import Box from '../Box/Box';
 import Typography from '../Typography/Typography';
 import Separator from '../Separator/Separator';
 import Card from './Card/Card';
-import { FiCode, FiLayers, FiColumns, FiBox } from 'react-icons/fi';
+import { MdOutlineLayers, MdOutlineCode, MdOutlineViewInAr, MdOutlinePause } from 'react-icons/md';
 import { StyledContainerService } from './style';
 
 export default function CardServices(){
@@ -14,20 +14,20 @@ export default function CardServices(){
                     <Typography size='medium' color='primary' bottom={10} align='center'>My Service</Typography>
                     <Separator/>
                 </Box>
-                <StyledContainerService direction='row' width={100} top={30}>
-                    <Card icon={<FiLayers size={42} strokeWidth={1} stroke='currentColor'/>}>
+                <StyledContainerService direction='row' content='space-between' width={100} top={30}>
+                    <Card icon={<MdOutlineLayers size={42} />}>
                         <Typography size='medium' color='black'>UI/UX</Typography>
                         <Typography size='medium' color='black'>Designer</Typography>
                     </Card>
-                    <Card icon={<FiBox size={42} strokeWidth={1} stroke='currentColor'/>}>
+                    <Card icon={<MdOutlineViewInAr size={42} />}>
                         <Typography size='medium' color='black'>Product</Typography>
                         <Typography size='medium' color='black'>Design</Typography>
                     </Card>
-                    <Card icon={<FiColumns size={42} strokeWidth={1} stroke='currentColor'/>}>
+                    <Card icon={<MdOutlinePause size={42} />}>
                         <Typography size='medium' color='black'>Branding</Typography>
                         <Typography size='medium' color='black'>Design</Typography>
                     </Card>
-                    <Card icon={<FiCode size={42} strokeWidth={1} stroke='currentColor'/>}>
+                    <Card icon={<MdOutlineCode size={42} />}>
                         <Typography size='medium' color='black'>Front End</Typography>
                         <Typography size='medium' color='black'>Development</Typography>
                     </Card>

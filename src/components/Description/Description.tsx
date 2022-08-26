@@ -1,16 +1,17 @@
 import Container from "../../components/Container/Container";
 import Typography from "../../components/Typography/Typography";
 import Box from "../../components/Box/Box";
-import { StyledButtonHi } from './style';
+import { StyledButtonHi, StyledContainerImage, StyledContainerDescription } from './style';
+import { BsArrowRight } from 'react-icons/bs';
 
 export default function Description(){
     return(
         <Container size='medium'>
                 <Box width={100} py={50} content='center' align='center'>
-                    <Box width={40} py={40}>
+                    <StyledContainerImage width={40} py={40}>
                         <img src={require('../../assets/images/notebook.png')} alt='notebook' style={{ boxShadow: '20px 20px #fff', borderRadius: '10px' }}/>
-                    </Box>
-                    <Box width={60} direction='column' py={40} px={80} align='left'>
+                    </StyledContainerImage>
+                    <StyledContainerDescription width={60} direction='column' py={40} px={80} align='left'>
                         <Typography size='medium' color="primary">
                         Software Engineer and Infrastructure specialist based in Brazil.
                         </Typography>
@@ -32,8 +33,8 @@ export default function Description(){
                             <Typography size='small' color="primary" left={12}>Completed <Typography size='small' color="primary">Projects</Typography></Typography>
                             </Box>
                         </Box>
-                        <StyledButtonHi color='secondary'>SAY HI</StyledButtonHi>
-                    </Box>
+                        <StyledButtonHi color='secondary'>SAY HI <BsArrowRight size={25} /></StyledButtonHi>
+                    </StyledContainerDescription>
                 </Box>
             </Container>    
     )

@@ -3,14 +3,20 @@ import Button from "../Button/Button";
 import Box from "../Box/Box";
 import Typography from "../Typography/Typography";
 import Header from "../Header/Header";
-import { StyledContainerImage, StyledContainerApresentation, TextApresentation, TextDescription } from './style';
+import { 
+    StyledContainerImage, 
+    StyledContainerApresentation, 
+    TextApresentation, 
+    TextDescription,
+    StyledContainerHome
+} from './style';
 
 export default function Apresentation(){
     return(
         <Container size='medium'>
                     <Header />
-                    <Box width={100} direction='row'>
-                        <StyledContainerApresentation width={50} direction='column' content='center' align="center">
+                    <StyledContainerHome width={100} direction='row'>
+                        <StyledContainerApresentation width={60} direction='column' content='center' align="center">
                             <Box width={100}>
                                 <TextApresentation size='large' color='primary'>
                                     Hello, I'm John, a
@@ -46,10 +52,10 @@ export default function Apresentation(){
                                 </Box>
                             </Box>
                         </StyledContainerApresentation>
-                        <StyledContainerImage width={50}>
+                        <StyledContainerImage width={51}>
                             <img src={require('../../assets/images/Image.png')} alt="foto" />
                         </StyledContainerImage>
-                    </Box>
+                    </StyledContainerHome>
                 </Container>
     )
 }
